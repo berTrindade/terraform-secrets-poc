@@ -1,0 +1,30 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+tfplan*
+crash.log
+crash.*.log
+
+# Sensitive files
+*.tfvars
+!terraform-*.tfvars  # Allow example tfvars
+secret*.tfvars
+*-secrets.tfvars
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+secrets-backup.json

@@ -1,0 +1,14 @@
+{
+  "name": "terraform-secrets-poc",
+  "version": "1.0.0",
+  "description": "Terraform POC for secure secret management with AWS Secrets Manager",
+  "type": "module",
+  "scripts": {
+    "seed": "node scripts/secrets.js seed",
+    "read": "node scripts/secrets.js read",
+    "list": "node scripts/secrets.js list"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.0.0"
+  }
+}
